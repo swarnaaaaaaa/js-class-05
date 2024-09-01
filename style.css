@@ -1,0 +1,78 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* --COMMMON CSS-- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,p{
+    margin: 0;
+    padding: 0;
+}
+
+/* ---NAV START--- */
+nav {
+    background-color: burlywood;
+    padding: 20px 0;
+}
+nav .sidebarBtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+.sidebar{
+    position: fixed;
+    inset: 0;
+    background-color: gray;
+    opacity: 0;
+    visibility: hidden;
+}
+.sidebar.active{
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar.active .sidebarCnt{
+    transform: translateX(0);
+}
+.sidebarCnt {
+    width: 80%;
+    background-color: white;
+    height: 100vh;
+    overflow-y: auto;
+    max-width: 350px;
+    padding: 30px 20px;
+    position: relative;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+}
+.sidebarCnt ul{
+    text-align: center;
+    margin-top: 30px;
+}
+.sidebarCnt ul a {
+    color: black;
+    margin-bottom: 15px;
+    display: block;
+}
+.sidebarCnt .cancel{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    color: red;
+}
+.sidebarLogo {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+.sidebarLogo img{
+    width: 100%;
+}
